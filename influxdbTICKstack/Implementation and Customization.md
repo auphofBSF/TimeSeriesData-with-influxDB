@@ -127,6 +127,20 @@ extending via udf's
 # UDF Requirement : Edge Detection (Stage Change)
 Reduce records to stage changes, Where a device is polled for its data, amongst the numeric records are also state records often as strings. These records are all passed as one timestamp entry into influxdb through telegraph or by direct interfaces, http  POST or specific language client. Python has a module influxdb 
 
+### Implementation
+
+My implementation is on a Synology NAS in a virtual DSM  testbed
+
+```
+ssh {username}@{SynlogoyNAS} -p 22
+cd /volume1/{Dev Directory}
+
+git clone https://github.com/auphofBSF/TimeSeriesData-with-influxDB.git
+
+sudo docker-com
+
+```
+
 
 
 
@@ -164,7 +178,8 @@ ISSUE: ?
 
 - UDF's wont start if unix socket file present
     rm .....{udf}.sock
-
+    
+Maybe related [Recover from socket-based UDF connection failure? #1174](https://github.com/influxdata/kapacitor/issues/1174)
 
 # Interesting work to watch
 | | |
