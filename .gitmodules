@@ -1,0 +1,3 @@
+[submodule "kapacitor-udf-edgedetect"]
+	path = kapacitor-udf-edgedetect
+	url = https://github.com/auphofBSF/kapacitor-udf-edgedetect.git
